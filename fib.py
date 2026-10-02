@@ -1,0 +1,13 @@
+def fibonacci(n):
+    sequence = []
+    a, b = 0, 1
+    for _ in range(n):
+        sequence.append(a)
+        a, b = b, a + b
+    return sequence
+
+if __name__ == "__main__":
+    count = 100
+    fib_sequence = fibonacci(count)
+    for num in fib_sequence:
+        print(num)
